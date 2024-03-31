@@ -259,4 +259,7 @@ footer {
     #checkout-form{
         width: 90%;
     }
+    .total-price{
+        font-size: 14px;
+    }
 }
