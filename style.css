@@ -1,0 +1,152 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    
+}
+
+nav ul li {
+    
+    margin: 0px 20px; /* Уменьшим отступы между кнопками */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #131313;
+    padding: 15px 10px; /* Изменяем padding для адаптивности */
+
+    border-radius: 10px;
+    display: block; /* Делаем кнопки блочными элементами */
+    width: 100%; /* Устанавливаем ширину кнопок на 100% */
+    text-align: center; /* Центрируем текст кнопок */
+    margin-bottom: 10px; /* Добавим немного отступа снизу между кнопками */
+}
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.product {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 306px;
+    border: 3px solid #121212;
+    border-radius: 10px;
+}
+
+.product h2 {
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+button {
+    background-color: #434343; /* Ярко-синий цвет */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #373737; /* Немного темнее при наведении */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Уменьшаем высоту на мобильных устройствах */
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product {
+        width: calc(100% - 20px);
+    }
+    footer{
+        font-size: 12px;
+        font-weight: 700;
+        height: 40px;
+    }
+    main{
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+/* Медиа-запрос для адаптации на мобильные устройства */
+@media screen and (min-width: 480px) {
+    
+    nav ul{
+        display: flex; /* Размещаем каждую кнопку на новой строке */
+        justify-content: center;
+        margin: 5px 0; /* Уменьшаем отступы между кнопками */
+    }
+    
+}
+
+
+@media screen and (max-width: 480px) {
+    nav ul li {
+        margin: 0px 5px; /* Уменьшим отступы между кнопками */
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        padding: 15px 0px;
+    }
+}
